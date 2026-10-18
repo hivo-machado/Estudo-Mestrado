@@ -1,5 +1,9 @@
+/* Comecando com uma funcao simples
+   Apenas para relembrar como criar uma funcao
+   E poder ter um retorno (resposta)*/
+
 int calcularTotal(int preco, int quantidade) {
-    return preco * quantidade;
+    return preco * quantidade; // recebendo dois valores, para calcular o valor total
 }
 
 double calcularMedia(int nota1, int nota2) {
