@@ -99,3 +99,47 @@ int contarAlgarismos(int n) {
 
     return contador;
 }
+
+bool ehPrimo(int n) {
+    int entrou = 0;
+
+    if (n < 2) {
+        return false;
+    }
+
+    for (int i = 2; i < n; i++) {
+        if ((n % i) == 0) {
+            entrou++;
+        }
+    }
+
+    if (entrou > 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+int somarPrimos(int n) {
+    int soma = 0;
+
+    for (int i = 1; i <= n; i++) {
+        if (ehPrimo(i) == true) {
+            soma = soma + i;
+        }
+    }
+
+    return soma;
+}
+
+int contarPrimos(int n) {
+    int contador = 0;
+
+    for (int i = 1; i <= n; i++) {
+        if (ehPrimo(i) == true) {
+            contador = contador + 1;
+        }
+    }
+
+    return contador;
+}
